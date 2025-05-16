@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #eef4ff;
+    padding: 40px;
+}
+
+  .navbar {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #6E94F5;
+  }
+  
+  .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .logo img{
+    width: 200px;
+    height: auto;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+  }
+  
+  .nav-links a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #3168f4;
+  }
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.user-info {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.user-info div {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.book-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.book-section h4 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.book-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.overdue {
+    background-color: #ffe8a1;
+}
+
+.no-records {
+    font-style: italic;
+    color: #888;
+}

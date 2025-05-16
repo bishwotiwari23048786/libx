@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eef4ff;
+}
+
+.navbar {
+  background-color: #6E94F5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links a {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.nav-links a:hover {
+  background-color: #3168f4;
+}
+
+.form-section {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.book-form label {
+  font-weight: 600;
+  color: #444;
+}
+
+.book-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.book-form button {
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #6E94F5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-form button:hover {
+  background-color: #3168f4;
+}
+
+.success-message,
+.error-message {
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+}
