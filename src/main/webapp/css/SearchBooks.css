@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eef4ff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #6E94F5;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+}
+
+.nav-links a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #3168f4;
+}
+
+.user-icon {
+  background-color: white;
+  color: #939191;
+  padding: 10px 13px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.user-icon:hover {
+  color: black;
+}
+
+.books-section {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.books-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.filters select,
+.filters input[type="text"],
+.filters input[type="number"] {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  min-width: 150px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.filters select:focus,
+.filters input[type="text"]:focus,
+.filters input[type="number"]:focus {
+  border-color: #6E94F5;
+  outline: none;
+}
+
+.filters button {
+  padding: 10px 20px;
+  background-color: #6E94F5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+  background-color: #3168f4;
+}
+
+/* Updated grid container */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* Updated card class */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.card p {
+  color: #555;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.book-cover {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.no-books {
+  text-align: center;
+  color: #888;
+  font-size: 18px;
+  margin-top: 40px;
+  padding: 20px;
+}

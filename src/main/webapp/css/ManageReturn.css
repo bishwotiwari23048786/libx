@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #eef4ff;
+  padding: 40px;
+}
+
+/* Add container to center the content with margin on left and right */
+.container {
+  max-width: 1200px; /* Maximum width for large screens */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px; /* Add padding for inner space */
+}
+
+/* Header Style */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Success and Error Messages */
+.success, .error {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.success {
+  color: green;
+  background-color: #e1f7e1;
+}
+
+.error {
+  color: red;
+  background-color: #ffe6e6;
+}
+
+/* General Form Styling */
+.form-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.form-box label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-box select,
+.form-box input[type="date"],
+.form-box input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-box input[type="submit"] {
+  background-color: #6e94f5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Full width for a uniform look */
+}
+
+.form-box input[type="submit"]:hover {
+  background-color: #3168f4;
+}
+
+/* Overdue Days Styling */
+.form-box .overdue-days {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.form-box .overdue-days span {
+  display: block;
+}
+
+.form-box .overdue-days .overdue {
+  color: red;
+  font-weight: bold;
+}
+
+.form-box .overdue-days .no-overdue {
+  color: green;
+}
+
+/* Styling for Select Box */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Down_arrow_font_awesome.svg/1200px-Down_arrow_font_awesome.svg.png') no-repeat right 10px center;
+  background-size: 12px;
+}
+
+input::placeholder,
+select::placeholder {
+  color: #ccc;
+}
+
+/* Success and Error Message Styling (if needed in form) */
+.success, .error {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.success {
+  color: green;
+  background-color: #e1f7e1;
+}
+
+.error {
+  color: red;
+  background-color: #ffe6e6;
+}
+
+/* Custom Select Styling */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Down_arrow_font_awesome.svg/1200px-Down_arrow_font_awesome.svg.png') no-repeat right 10px center;
+  background-size: 12px;
+}
+
+/* Styling for Overdue Days */
+span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+span[style="color: red;"] {
+  color: red;
+}
+
+span[style="color: green;"] {
+  color: green;
+}
